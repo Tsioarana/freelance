@@ -1,25 +1,28 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt, FaPhp, FaReact, FaVuejs, FaNodeJs, FaAngular } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiSymfony, SiDjango, SiFlutter } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt, FaPhp, FaReact, FaVuejs, FaNodeJs, FaAngular, FaJsSquare } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiSymfony, SiDjango, SiFlutter, SiMongodb, SiMysql } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 const iconStyles = {
   html: { color: "#E44D26" },
-  css: { color: "#1572B6" }, // Example color for CSS
-  tailwind: { color: "#06B6D4" }, // Example color for Tailwind
-  bootstrap: { color: "#563D7C" }, // Example color for Bootstrap
-  node: { color: "#8CC84B" }, // Example color for Node.js
-  react: { color: "#61DAFB" }, // Example color for React
-  next: { color: "#000000" }, // Example color for Next.js
-  vue: { color: "#42b883" }, // Example color for Vue.js
-  angular: { color: "#DD0031" }, // Example color for Angular
-  django: { color: "#0C4B33" }, // Example color for Django
-  php: { color: "#777BBF" }, // Example color for PHP
-  symfony: { color: "#000000" }, // Example color for Symfony
-  git: { color: "#F05032" }, // Example color for Git
-  flutter: { color: "#02569B" }, // Example color for Flutter
+  css: { color: "#1572B6" },
+  tailwind: { color: "#06B6D4" },
+  bootstrap: { color: "#563D7C" },
+  node: { color: "#8CC84B" },
+  react: { color: "#61DAFB" },
+  next: { color: "rgb(64 60 60)" },
+  vue: { color: "#42b883" },
+  angular: { color: "#DD0031" },
+  django: { color: "#0C4B33" },
+  php: { color: "#777BBF" },
+  symfony: { color: "rgb(64 60 60)" },
+  git: { color: "#F05032" },
+  flutter: { color: "#02569B" },
   reactNative: { color: "#61DAFB" },
+  js: { color: "#F7DF1E" }, // Color for JavaScript
+  mongodb: { color: "#47A248" }, // Color for MongoDB
+  mysql: { color: "#00758F" }, // Color for MySQL
 };
 
 function Techstack() {
@@ -37,8 +40,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons" style={iconStyles.bootstrap}>
         <FaBootstrap />
       </Col>
+      <Col xs={4} md={2} className="tech-icons" style={iconStyles.js}>
+        <FaJsSquare />
+      </Col>
       <Col xs={4} md={2} className="tech-icons" style={iconStyles.node}>
         <FaNodeJs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" style={iconStyles.mongodb}>
+        <SiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons" style={iconStyles.react}>
         <FaReact />
@@ -61,15 +70,15 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons" style={iconStyles.symfony}>
         <SiSymfony />
       </Col>
-      <Col xs={4} md={2} className="tech-icons" style={iconStyles.git}>
-        <FaGitAlt />
+      <Col xs={4} md={2} className="tech-icons" style={iconStyles.mysql}>
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons" style={iconStyles.flutter}>
         <SiFlutter />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons" style={iconStyles.reactNative}>
-        <TbBrandReactNative />
-      </Col> */}
+      <Col xs={4} md={2} className="tech-icons" style={iconStyles.git}>
+        <FaGitAlt />
+      </Col>
     </Row>
   );
 }
