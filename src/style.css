@@ -753,3 +753,9 @@ button:focus {
     font-size: 1.5rem;
   }
 }
+
+.navbar-expand-2000 {
+  max-width: 2000px;
+  width: 100%; /* Utilise 100% de la largeur jusqu'à 2000px */
+  margin: 0 auto; /* Centre le navbar */
+}

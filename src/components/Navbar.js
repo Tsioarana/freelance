@@ -36,8 +36,9 @@ function NavBar() {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="navbar-expand-2000"
       className={navColour ? "sticky" : "navbar"}
+      style={{background: '#0205279d'}}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
