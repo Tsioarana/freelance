@@ -5,9 +5,9 @@ import './Service.css'; // Importation du fichier CSS pour les styles personnali
 
 const Service = () => {
   return (
-    <div className="service-container py-5" id='services'>
+    <div className="service-container py-5 mt-5" id='services'>
       <Container>
-        <h1 className="text-center service-title mb-5">
+        <h1 className="text-center service-title py-5 mb-5">
           Nos <strong className="purple">Services</strong>
         </h1>
         <p className="text-center service-description mb-5">
