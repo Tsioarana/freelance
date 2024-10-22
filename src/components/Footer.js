@@ -6,7 +6,7 @@ import {
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
-import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaSkype, FaPhoneAlt } from 'react-icons/fa';
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -15,19 +15,16 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="3" className="footer-copywright">
-          <h3 style={{color:'#fff'}}>Tsiferaniaina Angelot Développeur</h3>
+        <Col md="4" className="footer-copywright mt-2">
+          <p style={{color:'#fff', fontSize: '1.2rem'}}><FaSkype className="icon" /> Tsiferaniaina Angelot</p>
+          <p style={{color:'#fff', fontSize: '1.2rem'}}><FaEnvelope className="icon" /> angelottsiferana@gmail.com</p>
         </Col>
-        <Col md="3" className="footer-copywright">
+        <Col md="4" className="footer-copywright">
           <p style={{color:'#fff', fontSize: '1.2rem'}}>
           <FaMapMarkerAlt className="icon" /> Antananarivo, Madagascar
           </p>
         </Col>
-        <Col md="3" className="footer-copywright">
-          <p style={{color:'#fff', fontSize: '1.2rem'}}><FaEnvelope className="icon" /> angelottsiferana@gmail.com</p>
-
-        </Col>
-        <Col md="3" className="footer-body">
+        <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
@@ -67,9 +64,11 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
+
               </a>
             </li>
           </ul>
+          <p style={{color:'#fff', fontSize: '1.2rem'}}><FaPhoneAlt className="icon" /> +261 33 04 160 79</p>
         </Col>
         <Col md="12" className="footer-copywright">
           <h3 style={{color: '#61dafb'}}>© Angelot, {year} </h3>

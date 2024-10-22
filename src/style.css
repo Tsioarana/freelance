@@ -753,6 +753,11 @@ button:focus {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 350px) {
+  .main-name{
+    font-size: 2rem;
+  }
+}
 
 .navbar-expand-2000 {
   max-width: 2000px;
